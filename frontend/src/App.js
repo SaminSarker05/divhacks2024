@@ -8,13 +8,15 @@ import {
 } from "react-router-dom";
 import Login from './login';
 import Register from './register';
-// import Test from './test';
+import Home from './home';
 
 function App() {
   return (
       <Router>
           <Routes>
-              <Route exact path="/" element={<Login />} />
+              <Route exact path="/" element={<Home />} />
+              <Route exact path="/login" element={<Login />} />
+              <Route exact path="/register" element={<Register />} />
           </Routes>
       </Router>
   );

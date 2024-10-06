@@ -20,8 +20,6 @@ function Register() {
     }
   };
 
-  
-
   return (
     <form onSubmit={handleRegister}>
       <input 
