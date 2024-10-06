@@ -19,3 +19,7 @@ saminsarker05
 MrutdMWZtMlwi5JU
 
 need to add other ip address in network access
+
+
+first install everything 
+pip install -r requireemnts.txt

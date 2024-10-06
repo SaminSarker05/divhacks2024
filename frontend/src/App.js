@@ -1,6 +1,7 @@
 // import { useState } from 'react'
 // import axios from "axios";
-import './App.css';
+// import './App.css';
+import './index.css'; // or your relevant CSS file
 import {
   BrowserRouter as Router,
   Routes,
@@ -12,13 +13,14 @@ import Home from './home';
 
 function App() {
   return (
-      <Router>
-          <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route exact path="/login" element={<Login />} />
-              <Route exact path="/register" element={<Register />} />
-          </Routes>
-      </Router>
+    <Router>
+        <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/login" element={<Login/>} />
+            <Route exact path="/register" element={<Register />} />
+
+        </Routes>
+    </Router>
   );
 }
 
