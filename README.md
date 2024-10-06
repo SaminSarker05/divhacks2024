@@ -9,3 +9,13 @@ to go into environment
 
 to start backend from root .
 npm run start-backend
+
+to install mongodb 
+
+brew tap mongodb/brew
+brew install mongodb-community
+
+saminsarker05
+MrutdMWZtMlwi5JU
+
+need to add other ip address in network access
