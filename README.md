@@ -6,3 +6,6 @@ frontend: react
 
 source env/bin/activate
 to go into environment
+
+to start backend from root .
+npm run start-backend
