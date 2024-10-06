@@ -38,6 +38,18 @@ def calculate_eligibility(monthly_income, total_debt, savings, savings_goal, dep
     else:
         return False, {"safe_contribution": contribution}
 
+@app.route('/login', methods=['POST']) 
+def login():   
+  data = request.json  # Access the JSON data from the request   
+  username = data['username']   
+  password = data['password']   
+  user = users.find_one({'username': username})   
+  if user and bcrypt.check_password_hash(user['password'], password):     
+    session['user'] = username     
+    return jsonify({"message": "login success"}), 400   
+  else:     
+    return jsonify({"message": "you don't exist"}), 400
+
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
